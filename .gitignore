@@ -105,3 +105,6 @@ dist
 
 # IntelliJ Idea setting
 .idea/
+
+# Timeline Reports
+reports/
