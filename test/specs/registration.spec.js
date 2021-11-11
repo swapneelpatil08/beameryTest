@@ -7,11 +7,12 @@ import { registraionData } from "../testdata/registrationData";
 
 describe('Registration form', () => {
     const emailId = 'testBeam' + getRandomNumber() + '@gmail.com';
+    console.log(emailId);
     const testData = registraionData;
     let isNegativeTest = false;
 
     beforeEach(() => {
-        console.log(emailId);
+        isNegativeTest = false;
         indexPage.open().goToSignInPage();
     });
 
