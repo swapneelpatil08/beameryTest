@@ -1,4 +1,5 @@
 import BasePage from "./basePage";
+import loginPage from "./login.page";
 
 class IndexPage extends BasePage {
 
@@ -15,7 +16,7 @@ class IndexPage extends BasePage {
 
     goToSignInPage() {
         this.signInButton.click();
-        return this;
+        return loginPage;
     }
 }
 
