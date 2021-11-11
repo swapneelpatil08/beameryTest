@@ -12,7 +12,7 @@ class IndexPage extends BasePage {
         SIGN_IN_BUTTON: "a.login",
     }
 
-    get signInButton () { return $(this.locator.SIGN_IN_BUTTON) }
+    get signInButton() { return $(this.locator.SIGN_IN_BUTTON) }
 
     goToSignInPage() {
         this.signInButton.click();

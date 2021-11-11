@@ -1,11 +1,11 @@
 
 export default class BasePage {
 
-     open(path) {
-         return browser.url(path)
-     }
+    open(path) {
+        return browser.url(path)
+    }
 
     getTitle() {
-         return browser.getTitle();
-     }
+        return browser.getTitle();
+    }
 }

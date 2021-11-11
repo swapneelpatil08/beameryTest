@@ -13,7 +13,7 @@ class RegistationPage extends BasePage {
         DOB_DAY_INPUT: '#uniform-days',
         DOB_MONTH_INPUT: '#uniform-months',
         DOB_YEAR_INPUT: '#years',
- 
+
         // YOUR ADDRESS Section
         ADDRESS_FIRST_NAME_INPUT: 'input[name="firstname"]',
         ADDRESS_LAST_NAME_INPUT: 'input[name="lastname"]',
@@ -29,7 +29,7 @@ class RegistationPage extends BasePage {
 
         REGISTER_BUTTON: '#submitAccount'
     }
-    
+
     // YOUR PERSONAL INFORMATION section:
     get titleMrRadioButton() { return $(this.locator.TITLE_MR_RADIO_BUTTON); }
     get titleMrsRadioButton() { return $(this.locator.TITLE_MRS_RADIO_BUTTON); }
@@ -65,7 +65,7 @@ class RegistationPage extends BasePage {
 
     fillPersonalInformation(title, firstname, lastname, email, password, dob) {
         const birthdate = dob.split('-');
-        if(title == 'Mr.') 
+        if (title == 'Mr.')
             this.titleMrRadioButton.click();
         else
             this.titleMrsRadioButton.click();

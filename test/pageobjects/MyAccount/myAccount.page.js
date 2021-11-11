@@ -1,4 +1,5 @@
 import BasePage from "../basePage";
+import loginPage from "../login.page";
 
 class MyAccountPage extends BasePage {
 
@@ -16,6 +17,10 @@ class MyAccountPage extends BasePage {
     get myAddressesButton() { return $(this.locator.MY_ADDRESSES_BUTTON); }
     get personalInformationButton() { return $(this.locator.PERSONAL_INFORMATION_BUTTON); }
 
+    signOut() {
+        this.signOutButton.click();
+        return loginPage;
+    }
 }
 
 export default new MyAccountPage();
