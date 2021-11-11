@@ -175,6 +175,10 @@ export const config = {
         global.expect = chai.expect;
         global.should = chai.should();
         global.assert = chai.assert;
+
+        const fs = require('fs');
+        fs.rmdirSync('./reports/timeline', { recursive: true });
+        fs.rmdirSync('./log', { recursive: true });
     },
     /**
      * Gets executed before a worker process is spawned and can be used to initialise specific service
