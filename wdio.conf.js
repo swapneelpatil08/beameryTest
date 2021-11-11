@@ -1,4 +1,6 @@
-exports.config = {
+import { resolve } from 'path';
+
+export const config = {
     //
     // ====================
     // Runner Configuration
@@ -71,6 +73,7 @@ exports.config = {
     //
     // Level of logging verbosity: trace | debug | info | warn | error | silent
     logLevel: 'info',
+    outputDir: resolve(__dirname, './logs'),
     //
     // Set specific log levels per logger
     // loggers:
@@ -94,7 +97,7 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'http://automationpractice.com/index.php',
+    baseUrl: 'http://automationpractice.com/',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
@@ -132,7 +135,9 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec'],
+    reporters: [
+        'spec'
+    ],
 
 
     
@@ -141,7 +146,8 @@ exports.config = {
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        timeout: 60000
+        timeout: 60000,
+        compilers: ['js:@babel/register'],
     },
     //
     // =====
@@ -156,8 +162,12 @@ exports.config = {
      * @param {Object} config wdio configuration object
      * @param {Array.<Object>} capabilities list of capabilities details
      */
-    // onPrepare: function (config, capabilities) {
-    // },
+    onPrepare: function (config, capabilities) {
+        const chai    = require('chai');
+        global.expect = chai.expect;
+        global.should = chai.should();
+        global.assert = chai.assert;
+    },
     /**
      * Gets executed before a worker process is spawned and can be used to initialise specific service
      * for that worker as well as modify runtime environments in an async fashion.
@@ -186,8 +196,9 @@ exports.config = {
      * @param {Array.<String>} specs        List of spec file paths that are to be run
      * @param {Object}         browser      instance of created browser/device session
      */
-    // before: function (capabilities, specs) {
-    // },
+     before: function (capabilities, specs) {
+
+     },
     /**
      * Runs before a WebdriverIO command gets executed.
      * @param {String} commandName hook command name
@@ -281,4 +292,6 @@ exports.config = {
     */
     //onReload: function(oldSessionId, newSessionId) {
     //}
+
+    sync : true
 }
