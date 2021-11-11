@@ -141,7 +141,9 @@ export const config = {
         ['timeline',
             {
                 outputDir: './reports/timeline',
-                filename: 'timeline-report.html'
+                filename: 'timeline-report.html',
+                embededImages: true,
+                screenshotStrategy: 'before:click'
             }]
     ],
 
