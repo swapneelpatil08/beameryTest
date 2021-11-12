@@ -48,9 +48,9 @@ This project uses below locator strategies:
 # Reporting
 This project uses `spec` and `Timeline Reports`. 
 
-![spec-report](https://imgur.com/a/oj78Khz)
+![spec-report](https://ibb.co/NxCqPqF)
 
-![timeline-report](https://imgur.com/cMvkXAV)
+![timeline-report](https://ibb.co/hLQKtdc)
 
 After running the tests timeline report will be generated inside the project under `./reports/timeline`. Also, this location will be given in the terminal after the execution of the tests/suite, like -
 ```
