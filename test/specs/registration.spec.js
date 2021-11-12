@@ -6,7 +6,7 @@ import myAccountPage from "../pageobjects/MyAccount/myAccount.page";
 import { registraionData } from "../testdata/registrationData";
 
 describe('Registration form', () => {
-    const emailId = 'testBeam' + getRandomNumber() + '@gmail.com';
+    const emailId = 'testBeamery' + getRandomNumber() + '@gmail.com';
     console.log(emailId);
     const testData = registraionData;
     let isNegativeTest = false;

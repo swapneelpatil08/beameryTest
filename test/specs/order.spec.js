@@ -8,7 +8,7 @@ import shoppingCartPage from "../pageobjects/ShoppingCart/shoppingCart.page";
 import myAccountPage from "../pageobjects/MyAccount/myAccount.page";
 
 describe('Order a product', () => {
-    const emailId = 'testBeam' + getRandomNumber() + '@gmail.com';
+    const emailId = 'testBeamery' + getRandomNumber() + '@gmail.com';
     console.log(emailId);
     const testData = registraionData;
 
