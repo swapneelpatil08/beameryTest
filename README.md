@@ -20,10 +20,10 @@ Our spec files are placed in directory `./test/specs/`. Currently this project h
 This framework use Page Object Model _(aka POM)_, design pattern that creates object repository for storing web elements. Page Objects are located at `./test/pageobjects/`.
 
 ## Test data
-Static test data is kept under `./test/testdata/`. They are stored as a javascript objects. This is single point of test data source.
+Static test data is kept under `./test/testdata/` directory. They are stored as a javascript objects. This is single point of test data source.
 
 ## Configuration file
-This project uses config file `wdio.conf.js`. Here we have added all the configuration needed for this project, like - 
+This project uses config file `wdio.conf.js` which is under `./config/` directory. Here we have added all the configuration needed for this project, like - 
 ```Javascript
     baseUrl: 'http://automationpractice.com/',
     services: ['chromedriver', 'devtools', 'image-comparison', [TimelineService]],

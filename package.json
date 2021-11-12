@@ -4,8 +4,7 @@
     "description": "WebdriverIO  Test Project",
     "main": "index.js",
     "scripts": {
-        "test": "wdiotest",
-        "wdio": "wdio run wdio.conf.js"
+        "wdio": "wdio run ./config/wdio.conf.js"
     },
     "repository": {
         "type": "git",

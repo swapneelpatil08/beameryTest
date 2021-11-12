@@ -74,7 +74,7 @@ export const config = {
     //
     // Level of logging verbosity: trace | debug | info | warn | error | silent
     logLevel: 'info',
-    outputDir: resolve(__dirname, './logs'),
+    outputDir: resolve(__dirname, '../logs'),
     //
     // Set specific log levels per logger
     // loggers:
@@ -209,7 +209,7 @@ export const config = {
      * @param {Object}         browser      instance of created browser/device session
      */
     before: function (capabilities, specs) {
-
+        browser.maximizeWindow();
     },
     /**
      * Runs before a WebdriverIO command gets executed.
