@@ -3,7 +3,7 @@ This is take home task for the Senior Automation engineer role.
 
 # Based on 
 * **Node JS** _v12.13.0_
-* **[WebdriverIO](https://webdriver.io/ "WebdriverIO · Next-gen browser and mobile automation test framework for Node.js | WebdriverIO")** _v7.##.#_
+* **[WebdriverIO](https://webdriver.io/ "WebdriverIO · Next-gen browser and mobile automation test framework for Node.js | WebdriverIO")** _v7.#.#_
 
 # Installation
 1. Run `git clone https://github.com/swapneelpatil08/beameryTest.git`
@@ -40,17 +40,18 @@ This project uses config file `wdio.conf.js` which is under `./config/` director
 ```
 
 ## Locators 
-This project uses below locator strategies:
+In this project below locator strategies are used:
 1. _id_
 2. _xPath_
 3. _css locators_
 
 # Reporting
 This project uses `spec` and `Timeline Reports`. 
+### Spec report:
+![spec-report](https://i.imgur.com/e07AqYf_d.webp?maxwidth=760&fidelity=grand)
 
-![spec-report](https://photos.app.goo.gl/trS4UYBrvFxj33y86)
-
-![timeline-report](https://photos.app.goo.gl/2ENi9VQSDuEttMKA6)
+### Timeline 
+![timeline-report](https://i.imgur.com/cMvkXAV_d.webp?maxwidth=1520&fidelity=grand)
 
 After running the tests timeline report will be generated inside the project under `./reports/timeline`. Also, this location will be given in the terminal after the execution of the tests/suite, like -
 ```
