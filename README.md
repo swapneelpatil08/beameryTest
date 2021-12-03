@@ -1,4 +1,4 @@
-# beameryTest
+# webdriverIO-Javascript
 This automation project is developed using WebdriverIO and Javascript, to automate given website _(http://automationpractice.com/index.php)_. 
 Using this framework below scenarios have been automated.
 * Registration Process.
@@ -14,8 +14,8 @@ This is take home task for the Senior Automation engineer role.
 
 # Installation
 1. Clone respository by executing below command <br />
-    `git clone https://github.com/swapneelpatil08/beameryTest.git`
-2. Go inside the cloned the repository <br /> `cd beameryTest`
+    `git clone https://github.com/swapneelpatil08/webdriverIO-Javascript.git`
+2. Go inside the cloned the repository <br /> `cd webdriverIO-Javascript`
 3. Download dependencies by running below command <br /> `npm install`
 4. Now you are all set to run the tests, execute below command to run tests <br /> `npm run wdio`
  
@@ -65,7 +65,7 @@ This project uses `spec reporter` and `Timeline report`.
 After running the tests timeline report will be generated inside the project under `./reports/timeline`. Also, this location will be given in the terminal after the execution of the tests/suite, like -
 ```
 --------
-TIMELINE REPORTER: Created /Users/**/Documents/Personal/TestBeam/beameryTest/reports/timeline/timeline-report.html
+TIMELINE REPORTER: Created /Users/**/Documents/Personal/TestBeam/webdriverIO-Javascript/reports/timeline/timeline-report.html
 --------
 ```
 Timeline report also shows the screenshots in the report based on `screenshotStrategy: 'before:click'`. 
